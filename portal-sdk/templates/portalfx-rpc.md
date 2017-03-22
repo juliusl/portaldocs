@@ -1,4 +1,3 @@
-<properties title="" pageTitle="RPC" description="" authors="justbe" />
 
 ### Remote Procedure Calls (RPC)
 

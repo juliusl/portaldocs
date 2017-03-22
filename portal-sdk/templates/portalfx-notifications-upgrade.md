@@ -1,6 +1,5 @@
-<properties title="" pageTitle="Upgrading to the latest Notifications API" description="" authors="flanakin,gurua" />
 
-[Portal FX](/documentation/sections/portalfx) > [Hubs](/documentation/sections/portalfx#hubs) > [Notifications](/documentation/articles/portalfx-notifications) > Upgrading
+[Portal FX](/documentation/sections/portalfx) > [Hubs](/documentation/sections/portalfx#hubs) > [Notifications](portalfx-notifications.md) > Upgrading
 
 # Upgrading to the latest Notifications API
 

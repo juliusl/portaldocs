@@ -1,4 +1,3 @@
-<properties title="" pageTitle="Versioning an extension" description="" authors="adamab" />
 
 ### Support stamping the extension version at compile time
 

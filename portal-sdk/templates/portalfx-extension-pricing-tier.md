@@ -1,3 +1,4 @@
+{"gitdown": "contents"}
 
 ## Pricing Tier
 ### Consuming the Spec Picker Blade

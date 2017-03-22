@@ -1,3 +1,5 @@
+{"gitdown": "contents"}
+
 # Understanding the blade view model
 
 The portal uses a view model abstraction to allow extensions to author UI in the portal. This allows extensions to deal with data

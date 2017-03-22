@@ -1,7 +1,5 @@
 
-<properties title="" pageTitle="Part content state" description="" authors="sewatson" />
-
-[Portal FX](/documentation/sections/portalfx) > [UI](/documentation/sections/portalfx#ui) > [Parts](/documentation/articles/portalfx-parts-index) > Intrinsic Parts
+[Portal FX](/documentation/sections/portalfx) > [UI](/documentation/sections/portalfx#ui) > [Parts](portalfx-parts-index.md) > Intrinsic Parts
 
 # Intrinsic Parts
 
@@ -130,7 +128,7 @@ Learn how to use the Simple Chart part.
 Learn how to use the Single value gauge part.
 </a>
 
-Next steps: [Developing custom parts](/documentation/articles/portalfx-parts-custom)
+Next steps: [Developing custom parts](portalfx-parts-custom.md)
 
 [asset]: ../media/portalfx-controls/asset.png
 [button]: ../media/portalfx-controls/button.png

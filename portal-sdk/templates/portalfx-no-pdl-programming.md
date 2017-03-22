@@ -1,3 +1,4 @@
+{"gitdown": "contents"}
 
 ## TypeScript decorator support for extension metadata (formerly known as No-PDL or No PDL)
 

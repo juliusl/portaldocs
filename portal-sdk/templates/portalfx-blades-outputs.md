@@ -1,4 +1,3 @@
-<properties title="" pageTitle="Blade Outputs" description="" authors="justbe" />
 
 ### Blade Outputs
 

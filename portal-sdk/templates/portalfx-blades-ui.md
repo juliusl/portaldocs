@@ -1,6 +1,5 @@
-<properties title="" pageTitle="Controlling the blade UI" description="" authors="adamabdelhamed" />
 
-[Portal FX](/documentation/sections/portalfx) > [UI](/documentation/sections/portalfx#ui) > [Blades](/documentation/articles/portalfx-blades) > Blade UI
+[Portal FX](/documentation/sections/portalfx) > [UI](/documentation/sections/portalfx#ui) > [Blades](portalfx-blades.md) > Blade UI
 
 ### Controlling blade UI
 

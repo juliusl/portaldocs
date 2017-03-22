@@ -1,4 +1,3 @@
-<properties title="" pageTitle="MPAC Flighting" description="" authors="adamab" />
 
 [Portal FX](/documentation/sections/portalfx) > Flighting
 

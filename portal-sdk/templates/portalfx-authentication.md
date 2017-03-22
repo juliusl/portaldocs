@@ -1,3 +1,5 @@
+{"gitdown": "contents"}
+
 The portal uses an internal provider for authentication and authorization. 
 
 The built-in cloud auth provider uses Azure Active Directory (AAD), which also supports Microsoft Account (MSA, formerly 
@@ -162,8 +164,8 @@ Then, exchange the Fx token for your own:
 // Get the token passed to the controller
 var portalAuthorizationHeader = HttpContext.Current.GetRequestContext().RequestCorrelationContext.GetCorrelationData<AuthorizationCorrelationProvider>();
 if (portalAuthorizationHeader == null) {
-    // This should never happen, the auth module should have returned 401 if there wasnâ€™t a valid header present
-    throw new HttpException(401, "Unauthorized");
+        // This should never happen, the auth module should have returned 401 if there wasn’t a valid header present
+        throw new HttpException(401, "Unauthorized");
 }
 
 // Exchange it for the token that should pass to downstream services
@@ -191,10 +193,10 @@ string GetExchangedToken(string portalAuthorizationHeader, string clientId, X509
 }
 
 string GetAccessTokenFromAuthorizationHeader(string authorizationHeader) {
-    // The header will be in the form "Bearer eyâ€¦â€¦MZ"
-    // The access token in the last part of the header
-    var separator = new char[] { ' ' };
-    var accessToken = authorizationHeader.Split(separator, StringSplitOptions.RemoveEmptyEntries).LastOrDefault();
+        // The header will be in the form "Bearer ey……MZ"
+        // The access token in the last part of the header
+        var separator = new char[] { ' ' };
+        var accessToken = authorizationHeader.Split(separator, StringSplitOptions.RemoveEmptyEntries).LastOrDefault();
 
     return accessToken;
 }
@@ -326,7 +328,7 @@ Due to token size constraints, additional information cannot be added to the tok
 
 #### Q: How do I get the list of subscriptions? Or just those selected by a user?
 
-A: Call the `MsPortalFx.Azure.getAllSubscriptions()` or `MsPortalFx.Azure.getSelectedSubscriptions()` APIs (see the [subscriptions page](/documentation/articles/portalfx-subscriptions) for more information).
+A: Call the `MsPortalFx.Azure.getAllSubscriptions()` or `MsPortalFx.Azure.getSelectedSubscriptions()` APIs (see the [subscriptions page](portalfx-subscriptions.md) for more information).
 
 #### Q: When do authenticated sessions expire?
 

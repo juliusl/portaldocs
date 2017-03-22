@@ -1,5 +1,4 @@
-﻿<properties title="" pageTitle="Introduction to Grid" description="" authors="sewatson" />
-
+﻿
 ## Grid
 
 The grid control in SDK provides a rich set of features to build experiences that visualize tabular, structured data.

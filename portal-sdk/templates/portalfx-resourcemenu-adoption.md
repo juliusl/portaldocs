@@ -1,7 +1,7 @@
 # Resource menu adoption
 
 The resource menu is the navigation menu for all your resource's functionality. Since visually it's not a separate blade it ties the navigation menu and the content
-directly together giving the user the sense of being in a single 'app' like container. See [Resource menu](/documentation/articles/portalfx-resourcemenu) for a overview of what
+directly together giving the user the sense of being in a single 'app' like container. See [Resource menu](portalfx-resourcemenu.md) for a overview of what
 the resource menu is and why its worth doing.
 
 ## Migrating from a settings blade to a resource menu blade

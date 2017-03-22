@@ -1,4 +1,3 @@
-<properties title="" pageTitle="msportalfx-test-contribute documentation" description="msportalfx-test-contribute documentation" authors="amitgetgit" />
 
 ## Overview
 
@@ -35,11 +34,11 @@ If you would like to contribute a feature or an api to the msportalfxtest framew
    
    Submit a pull request to the repo [http://aka.ms/msportalfx-test](http://aka.ms/msportalfx-test)
 
-## id="contributing-questions">Questions?</h1>
+## Questions?
 
 Ask questions on: [https://stackoverflow.microsoft.com/questions/tagged?tagnames=ibiza-test](https://stackoverflow.microsoft.com/questions/tagged?tagnames=ibiza-test)
 
-## id="api-reference">API Reference</h1>
+## API Reference
 
 [View thet API Reference](http://aka.ms/msportalfx-test/api)
 

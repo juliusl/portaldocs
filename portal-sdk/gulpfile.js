@@ -10,6 +10,7 @@ var gulp = require('gulp');
 var path = require('path');
 var util = require('util');
 var ncp = require('ncp');
+var dir = require('node-dir');
 
 //directories have to work within both AzureUx-PortalFx and portalfx-docs-pr repos.
 const sdkDir = __dirname;
@@ -39,34 +40,33 @@ gulp.task('portal', function () {
     if (!fs.existsSync(generatedDir)) {
         fs.mkdirSync(generatedDir);
     }
-
-    var indexDocNames = ["index-portalfx.md",
-        "index-portalfx-extension-development.md",
-        "index-portalfx-extension-sharing-pde.md",
-        "index-portalfx-extension-accessibility.md",
-        "index-portalfx-extension-deployment.md",
-        "index-portalfx-extension-onboarding.md",
-        "index-portalfx-extension-monitor.md",
-        "index-portalfx-extension-test.md",
-        "index-portalfx-extension-QnA.md",
-        "index-portalfx-extension-style-guide.md",
-        "index-videos.md"];
-
-    //generate new master readme.md that appears in the root of the github repo that contains all sections
-    return gulpCommon.processFile(path.resolve(templatesDir, "README.md"), process.cwd(), {}, true).then(function () {  //generate root level docs for each section
-        var indexDocGenerationPromises = indexDocNames.map(function (indexFileName) {
-            return gulpCommon.processFile(path.resolve(templatesDir, indexFileName), generatedDir, {}, true);
+    
+    console.log("templates Dir " + templatesDir);
+    
+    return dir.paths(templatesDir, true, function (err, paths) {
+        if (err) throw err;
+        var dirs = paths.filter(function (file) {
+            return file.endsWith(".md");
         });
-
-        return Q.all(indexDocGenerationPromises);
-    }).then(function () {
-        var checkLinkPromises = [Q()];
-        if (process.argv.indexOf("--verify") > 0) {
-            checkLinkPromises  = indexDocNames.map(function (indexFileName) {
-                return gulpCommon.checkLinks(path.resolve(generatedDir, indexFileName));
-            });
-        }
-        return Q.all(checkLinkPromises);
+    
+        var filePromises = dirs.map(function (f) {
+            var relativePath = f.replace(templatesDir, "");
+            var newGeneratedDir = path.join(generatedDir, path.dirname(relativePath));
+            
+            if (!fs.existsSync(newGeneratedDir)){
+                fs.mkdirSync(newGeneratedDir);
+            }
+            
+            if (path.basename(f).startsWith("index")) {
+                // TODO generate Table of Contents only for index files
+                return gulpCommon.processFile(f, newGeneratedDir, {}, true);
+            }
+            else {
+                return gulpCommon.processFile(f, newGeneratedDir, {}, true);
+            }
+        });
+        
+        return Q.all(filePromises);
     });
 });
 
