@@ -1,3 +1,5 @@
+{"gitdown": "contents"}
+
 ## Getting started with the Portal SDK
 
 ### Prerequisites
@@ -97,9 +99,9 @@ For more information on the resource menu see the [Resource menu documentation](
 
 ### Next Steps
 
-Read more about [testing in production](/documentation/articles/portalfx-testinprod).
+Read more about [testing in production](portalfx-testinprod.md).
 
-Next Steps: To debug issues loading an extension in the portal, go through the [Debugging extension failures](/documentation/articles/portalfx-debugging-extension-load-failures) guide.
+Next Steps: To debug issues loading an extension in the portal, go through the [Debugging extension failures](portalfx-debugging-extension-load-failures.md) guide.
 
 ### Questions?
 

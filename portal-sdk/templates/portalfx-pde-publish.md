@@ -1,4 +1,3 @@
-<properties title="" pageTitle="Distributing a PDE using NuGet" description="" authors="nickha" />
 
 <tags
     ms.service="portalfx"

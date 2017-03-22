@@ -1,4 +1,3 @@
-<properties title="" pageTitle="Graph Control nuget" description="" authors="rickweb" />
 
 ## Graph
 

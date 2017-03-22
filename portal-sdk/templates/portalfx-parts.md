@@ -1,3 +1,4 @@
+{"gitdown": "contents"}
 
 ## Parts (a.k.a. tiles) 
 
@@ -42,7 +43,7 @@ To use a button part you first declare the part in the global __`<Definition>`__
 The matching view model lets you plug data into the part.  For this simple part, the data is just the label and icon, but for more data oriented parts this can be data gathered from a backend, like a resource provider.
 {"gitdown": "include-section", "file": "../Samples/SamplesExtension/Extension/Client/V1/Parts/Intrinsic/ViewModels/ButtonPartViewModel.ts", "section": "parts#BasicPartExampleViewModel"}
 
-More info: [More about built in parts](/documentation/articles/portalfx-parts-intrinsic)
+More info: [More about built in parts](portalfx-parts-intrinsic.md)
 Related: [Integrate your part with the tile gallery](##How to integrate your part into the part gallery (a.k.a. tile gallery))
 
 ### How to create a custom part where you define the look and feel as well as the data loading
@@ -133,11 +134,11 @@ At this point the part will become grayed out, non-interactive, and will have th
 
 ### Advanced Parts Topics
 
-- [Part versioning](/documentation/articles/portalfx-parts-versioning)
-- [Retiring a part](/documentation/articles/portalfx-parts-how-to-retire)
-- [How to remove a part from an unlocked blade](/documentation/articles/portalfx-parts-how-to-remove-from-blade)
-- [Using the reveal content pattern for better performance](/documentation/articles/portalfx-parts-revealContent)
-- [Handling part errors](/documentation/articles/portalfx-parts-errors)
+- [Part versioning](portalfx-parts-versioning.md)
+- [Retiring a part](portalfx-parts-how-to-retire.md)
+- [How to remove a part from an unlocked blade](portalfx-parts-how-to-remove-from-blade.md)
+- [Using the reveal content pattern for better performance](portalfx-parts-revealContent.md)
+- [Handling part errors](portalfx-parts-errors.md)
 - [Handling assets that no longer exist](#handling-assets-that-no-longer-exist)
 
  {"gitdown": "include-file", "file": "../templates/portalfx-parts-versioning.md"}

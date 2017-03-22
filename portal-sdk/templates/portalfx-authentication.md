@@ -1,3 +1,5 @@
+{"gitdown": "contents"}
+
 ### Overview 
 
 The portal uses an internal provider for authentication and authorization. 
@@ -138,7 +140,7 @@ Sample code for exchanging toke:
 
 Add an extra parameter to ajax calls (setAuthorizationHeader = { resourceName: "self" }
 
-Which means give me a token to myself and I’ll exchange that token later
+Which means give me a token to myself and I'll exchange that token later
 
 ```cs 
     MsPortalFx.Base.Net2.ajax({
@@ -155,8 +157,8 @@ Controller code.
     // Get the token passed to the controller
     var portalAuthorizationHeader = PortalRequestContext.Current.GetCorrelationData<AuthorizationCorrelationProvider>();
     if (portalAuthorizationHeader == null) {
-        // This should never happen, the auth module should have returned 401 if there wasn’t a valid header present
-        throw new HttpException(401, "Unauthorized");
+        // This should never happen, the auth module should have returned 401 if there wasn’t a valid header present
+        throw new HttpException(401, "Unauthorized");
     }
  
     // Exchange it for the token that should pass to downstream services
@@ -171,25 +173,25 @@ Controller code.
     string GetExchangedToken(string portalAuthorizationHeader, string clientId, X509Certificate2 clientCertificate, string resource) {
 
         // proof that the intune extension is making the token request
-        var clientAssertion = new ClientAssertionCertificate(clientId, clientCertificate);
+        var clientAssertion = new ClientAssertionCertificate(clientId, clientCertificate);
      
-        // proof that the request originated from the portal and is on behalf of a valid user
-        var accessToken = GetAccessTokenFromAuthorizationHeader(portalAuthorizationHeader);
-        var userAssertion = new UserAssertion(accessToken, "urn:ietf:params:oauth:grant-type:jwt-bearer"); 
+        // proof that the request originated from the portal and is on behalf of a valid user
+        var accessToken = GetAccessTokenFromAuthorizationHeader(portalAuthorizationHeader);
+        var userAssertion = new UserAssertion(accessToken, "urn:ietf:params:oauth:grant-type:jwt-bearer"); 
      
-        // the actual token exchange
-        var exchangedToken = authContext.AcquireToken(resource, clientAssertion, userAssertion); 
+        // the actual token exchange
+        var exchangedToken = authContext.AcquireToken(resource, clientAssertion, userAssertion); 
      
-        return exchangedToken.GetAuthorizationHeader();
+        return exchangedToken.GetAuthorizationHeader();
     }
  
     string GetAccessTokenFromAuthorizationHeader(string authorizationHeader) {
-        // The header will be in the form "Bearer ey……MZ"
-        // The access token in the last part of the header
-        var separator = new char[] { ' ' };
-        var accessToken = authorizationHeader.Split(separator, StringSplitOptions.RemoveEmptyEntries).LastOrDefault();
+        // The header will be in the form "Bearer ey……MZ"
+        // The access token in the last part of the header
+        var separator = new char[] { ' ' };
+        var accessToken = authorizationHeader.Split(separator, StringSplitOptions.RemoveEmptyEntries).LastOrDefault();
      
-        return accessToken;
+        return accessToken;
     }
 ```
 
@@ -319,7 +321,7 @@ Due to token size constraints, additional information cannot be added to the tok
 
 #### Q: How do I get the list of subscriptions? Or just those selected by a user?
 
-A: Call the `MsPortalFx.Azure.getAllSubscriptions()` or `MsPortalFx.Azure.getSelectedSubscriptions()` APIs (see the [subscriptions page](/documentation/articles/portalfx-subscriptions) for more information).
+A: Call the `MsPortalFx.Azure.getAllSubscriptions()` or `MsPortalFx.Azure.getSelectedSubscriptions()` APIs (see the [subscriptions page](portalfx-subscriptions.md) for more information).
 
 #### Q: When do authenticated sessions expire?
 

@@ -1,4 +1,3 @@
-<properties title="" pageTitle="Editor" description="" authors="sewatson" />
 
 ### Editor
 

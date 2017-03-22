@@ -1,4 +1,4 @@
-<properties title="" pageTitle="Telemetry in the Portal" description="" authors="" />
+{"gitdown": "contents"}
 
 ## Overview
 

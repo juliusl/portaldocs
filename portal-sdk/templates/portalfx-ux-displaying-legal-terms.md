@@ -1,4 +1,3 @@
-<properties title="Displaying legal terms in a create form" pageTitle="Displaying legal terms in a create form" description="" authors="danyuen" />
 
 <tags
     ms.service="portalfx"

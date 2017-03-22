@@ -1,4 +1,3 @@
-<properties title="" pageTitle="Parameter Collection v2" description="" authors="nickharris" />
 
 {"gitdown": "include-file", "file": "./includes/portalfx-parameter-collection-related.md"}
 

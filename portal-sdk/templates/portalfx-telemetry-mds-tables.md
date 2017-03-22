@@ -1,4 +1,3 @@
-<properties title="" pageTitle="MDS Tables" description="" authors="thaodoan" />
 
 <tags
     ms.service="portalfx"

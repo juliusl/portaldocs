@@ -1,6 +1,5 @@
-<properties title="" pageTitle="Upgrading to the latest Browse API" description="" authors="flanakin" />
 
-[Portal FX](/documentation/sections/portalfx) > [Hubs](/documentation/sections/portalfx#hubs) > [Notifications](/documentation/articles/portalfx-browse) > Upgrading
+[Portal FX](/documentation/sections/portalfx) > [Hubs](/documentation/sections/portalfx#hubs) > [Notifications](portalfx-browse.md) > Upgrading
 
 # Upgrading to the latest Browse API
 
