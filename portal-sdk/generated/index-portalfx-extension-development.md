@@ -1635,7 +1635,7 @@ Related: [Integrate your part with the tile gallery](##How to integrate your par
 <a name="basic-concepts-parts-a-k-a-tiles-how-to-create-a-custom-part-where-you-define-the-look-and-feel-as-well-as-the-data-loading"></a>
 ### How to create a custom part where you define the look and feel as well as the data loading
 
-Unlike the built in parts discussed in the previous section, custom parts let you define the html template that will be bound to your view model. Your templates can (and in many cases should) refer to the [controls](#Controls) that are provided by the framework.
+Unlike the built in parts discussed in the previous section, custom parts let you define the html template that will be bound to your view model. Your templates can (and in many cases should) refer to the [controls](#controls) that are provided by the framework.
 
 __You can see this code working in a [live sample here](http://aka.ms/portalfx/samples#blade/SamplesExtension/SDKMenuBlade/custompart).__
 
